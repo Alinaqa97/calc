@@ -1,0 +1,28 @@
+<html lang="ru">
+	<head>
+		<title>Калькулятор</title>
+	</head>
+	<body>
+		<script>
+			function calc() {
+				let a = document.getElementById('a_value').value,
+					b = document.getElementById('b_value').value;
+
+				let c = a / b;
+				alert(c);
+			}
+		</script>
+		<h1>Калькулятор деления целых чисел</h1>
+		<div>
+			<label for="a_value">Введите число A:</label>
+			<input id="a_value" type="text" placeholder="1" />
+			<br>
+			<br>
+			<label for="b_value">Введите число Б:</label>
+			<input id="b_value" type="text" placeholder="1" />
+			<br>
+			<br>
+			<button onclick="calc()">Рассчитать</button>
+		</div>
+	</body>
+</html>
